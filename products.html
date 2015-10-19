@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Delphinos | Products</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 
+CREDITS AREA - Here are all the cool websites that did this project for me
+
+
+[] Fonts: 
+Montserrat https://www.google.com/fonts/specimen/Montserrat
+Roboto Slab https://www.google.com/fonts/specimen/Roboto+Slab
+
+[] Images:
+All photos belong to our awesome designer, Vicki Bouros http://vickibouros.com/ so please add credit in the footer of the website somewhere.  
+
+[] Nat Cooper Things: 
+Nat Cooper helped me a lot. These are the cool things she did:
+http://codepen.io/natacoops/pen/LpRgRK
+
+[] The range slider
+http://danielstern.ca/range.css/#/
+
+[] Coding the select box
+https://coderwall.com/p/w7npmq/fully-custom-select-box-simple-css-only
+
+[]Using a box-shadow effect instead of border
+http://emilie-zawadzki.com/somenotes
+
+-->
+
+<!-- 1.0 NAVIGATION -->
+
+<!-- 1.1 navigation 1 -->
+<nav class="nav1 clearfix">
+	<ul class="nav1-left ul-styling clearfix">
+		<li><a href="#">EN</a></li>
+		<li><a href="#"><i class="fa fa-usd"></i></i></li>
+		<li><i class="fa fa-search"></i></li>
+	</ul>
+	<ul class="nav1-right ul-styling">
+		<li><a href="#">LOGIN</a></li>
+		<li><a href="#">WISHLIST</a> <span class="wish">3</span></li>
+		<li><a href="#">MY CART</a> <span class="cart">4</span></li>
+	</ul>
+</nav>
+
+<!-- 1.2 navigation 2 -->
+<nav class="nav2 clearfix">
+	<div class="inner-wrapper">
+		<img src="assets/delphinus-logo.png" alt="Delphinus logo">
+		<ul class="menu ul-styling">
+			<li><a href="index.html" class="currentLink">HOME</a></li>
+			<li><a href="products.html">SHOP STYLES</a></li>
+			<li><a href="#">PAGES</a></li>
+			<li><a href="#">ELEMENTS</a></li>
+			<li><a href="#">FEATURES</a></li>
+		</ul>	
+	</div>
+</nav>
+
+<!-- 2.0 HEADER -->
+
+<!-- 2.1 header main page-->
+<!-- <header class="main">
+	<h1>New way to design</h1>
+	<p>Dephinus with a tool that make design simple<p>
+	<p>for everyone</p> 
+</header>  -->
+
+<!-- 2.2 header for all other pages -->
+<header class="all">
+	<div class="inner-wrapper clearfix">
+		<p><a href="index.html">Home</a> / <a href="#">All Products</a></p>
+		<h2>All products</h2>
+	</div>
+</header> 
+
+
+
+<!-- 4.0 main content area for products -->
+<div class="contact-main inner-wrapper clearfix">
+
+	<!-- 4.1 sidebar -->
+	<aside>
+		<div class="sidebar">
+			<ul>
+				<li><h3>Categories</h3></li>
+				<li>Chair</li>
+				<li>Table</li>
+				<li>Lamp</li>
+				<li>Watch</li>
+				<li>Clock</li>
+			</ul>
+		</div>		
+		<div class="sidebar">
+			<ul>
+				<li><h3>Color</h3></li>
+				<li>Black <a href="#">(5)</a></li>
+				<li>White <a href="#">(2)</a></li>
+				<li>Brown <a href="#">(3)</a></li>
+				<li>Blue <a href="#">(7)</a></li>
+				<li>Red <a href="#">(15)</a></li>
+			</ul>
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li><h3>Brands</h3></li>
+				<li>Aecraft <a href="#">(25)</a></li>
+				<li>Artek <a href="#">(5)</a></li>
+				<li>Bower <a href="#">(6)</a></li>
+				<li>Culinarium <a href="#">(8)</a></li>
+				<li>Desu <a href="#">(18)</a></li>
+			</ul>
+		</div>
+		<div class="sidebar clearfix">
+			<h3>Price</h3>	
+			<form action="">
+				<input type="range" class="zoom" min="30" max="150">
+			</form>
+		</div>	
+		<p>$100 - $500</p>
+	</aside> <!-- / aside -->
+
+	<!-- 4.2 Products section -->
+	<section class="products-section clearfix">
+
+		<!-- 4.2.1 navigation for products section-->
+		<div class="products-nav clearfix">	
+			<form class="show">
+				<label>Show by:</label>
+				<select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+				</select>
+			</form> <!-- / form.show -->
+		
+			<form class="show">
+				<label>Sort by:</label>
+				<select>
+					<option value="1">Best Selling</option>
+					<option value="2">New Releases</option>
+					<option value="3">Special Deals</option>
+					<option value="4">All products</option>
+				</select>
+			</form> <!-- /show -->
+			
+
+			<div class="items">
+				<i class="fa fa-th"></i>
+				<i class="fa fa-bars"></i>
+				<p>Items 1 - 15 of 28 total</p> 
+			</div> <!-- /items -->
+		</div> <!-- /products-nav -->
+
+		<!-- 4.2.2 List gallery for photos -->
+		<ul class="mikey">
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+
+			<li>
+				<img src="assets/productpage-placeholder.jpg" alt="photo of a nice chair">
+				<h3>JWDA Concrete Lamp</h3>
+				<p>$340.00</p>
+			</li>
+		</ul> <!-- /ul.mikey -->
+	
+		<!-- 4.2.3 bottom navigation on the products page -->
+		<div class="next-page clearfix">
+			
+			<div class="arrow-left">
+				<i class="fa fa-long-arrow-left"></i>
+			</div>
+			
+			<div class="numbers clearfix">
+				<!-- <p><a href="#">1</a></p>
+				<p><a href="#">2</a></p>
+				<p><a href="#">3</a></p>
+				<p><a href="#">4</a></p> -->
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</div>
+			
+			<div class="arrow-right">
+				<i class="fa fa-long-arrow-right"></i>
+			</div>
+
+		</div> <!-- / next-page -->
+	</section> <!-- /section.products-section -->
+</div> <!-- / div.contact-main -->
+
+
+
+
+<!-- 6.0 footer -->
+<footer>
+	
+	<!-- footer 1 -->
+	<div class="footer1">
+		<div class="inner-wrapper clearfix">
+			<div class="ship">
+				<h2>Free shipping</h2>
+			</div>
+			<div class="return">
+				<h2>Free return</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer 2 -->
+	<div class="footer2">
+		<div class="inner-wrapper">
+			<ul class="f-list information">
+				<li><h3>Information</h3></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="#">New</a></li>
+				<li><a href="#">Store</a></li>
+			</ul>
+
+			<ul class="f-list collections-list">
+				<li><h3>Collections</h3></li>
+				<li><a href="#">Living Room</a></li>
+				<li><a href="#">Bathroom</a></li>
+				<li><a href="#">Kitchen</a></li>
+				<li><a href="#">Bedroom</a></li>
+				<li><a href="#">Garden</a></li>
+			</ul>
+
+			<ul class="f-list extras">
+				<li><h3>Extras</h3></li>
+				<li><a href="#">Brands</a></li>
+				<li><a href="#">Gift Vouchers</a></li>
+				<li><a href="#">Affiliates</a></li>
+				<li><a href="#">Specials</a></li>
+			</ul>
+
+			<ul class="f-list myAccount">
+				<li><h3>My Account</h3></li>
+				<li><a href="#">My Account</a></li>
+				<li><a href="#">Order History</a></li>
+				<li><a href="#">Wish List</a></li>
+				<li><a href="#">Newsletter</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- footer 5 -->
+	<div class="footer5">
+		<div class="inner-wrapper">
+			<div class="linzee">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<p>© 2015 Dephinus</p>
+		</div>
+	</div>
+</footer>
+
+
+	
+	
+</body>
+</html>
