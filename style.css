@@ -17,7 +17,7 @@ body {
 }
 
 section {
-	margin: 20px 0;
+	margin: 2rem 0;
 }
 
 h1,
@@ -57,16 +57,22 @@ a:hover {
 	color: red;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .currentLink {
    color: black;
 }
 
-ul, .ul-styling {
+/*ul, .ul-styling {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 
-}
+}*/
 
 div.wrapper {
 	max-width: 1000px;
@@ -80,41 +86,54 @@ div.inner-wrapper {
 }
 
 /*1.0 NAVIGATION*/
-
-
-/*NAV 1*/
-nav a { 
-	padding: 0 10px;
-
-}
-
-/*1.1  navigation 1 */
-nav.nav1 {
-	border-bottom: 1px solid #D9CFCF;
+nav {
+	display: flex;
+	flex-direction: column;
 	position: fixed;
-	background: white;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 99999;
+	background: white;
+	z-index: 2;
+	text-transform: uppercase;
+
 
 }
 
-	nav.nav1 ul.nav1-left {
-		float: left;
+nav ul {
+	display: flex;
+}
 
-	}
 
-	nav.nav1 ul.nav1-right {
-		float: right;
+nav ul a {
+	/*padding: 1rem;*/
+}
 
-	}	
+.nav-one {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	border-bottom: 1px solid #D9CFCF;*/
 
-		nav.nav1 ul.nav1-left li, nav.nav1 ul.nav1-right li {
-			display: inline-block;
-			padding: 10px 30px;
-			border-right: 1px solid #D9CFCF;
-		}
+}
+
+.nav-one ul li {
+	padding: 0 2rem;
+	border-right: 1px solid #D9CFCF;
+}
+
+.nav-two {
+	padding: 2rem 0;
+}
+
+.nav-two li {
+	padding: 0 2rem;
+}
+.navFlex {
+	display: flex;
+	justify-content: space-between;
+}
+
 
 span.wish {
 	background: #F9F8F8;
@@ -124,34 +143,7 @@ span.wish {
 span.cart {
 	padding: 3px 10px;
 	border: 2px solid black;
-
 }
-
-/*1.2 navigation 2*/
-nav.nav2 {
-	padding: 3rem;
-	position: fixed;
-	top: 3rem;
-	left: 0;
-	right: 0;
-	background: white;
-	z-index: 888;
-}
-	nav.nav2 img {
-		float: left;
-	}
-
-	nav.nav2 ul.menu {
-		float: right;
-
-	}
-		nav.nav2 ul.menu li {
-			display: inline;
-			
-		}
-	nav.nav2 a:active {
-		color: black;
-	}
 
 /* 2.0 HEADER*/
 
@@ -212,30 +204,65 @@ section.all-collection img {
 }
 
 .collection {
-	position: relative;
+	/*position: relative;*/
 	margin-bottom: 2rem;
+	display: flex;
 
 }
 
-.col-pictures-1 img {
-	float: left;
-	width: calc(70% - 20px);
-	margin-right: 20px;
+.collection & > * {
+	flex: 1 0 calc (50% - 10px);
+	margin-right: 10px;
+}
 
+.col-pictures-1 {
+	background: url(assets/mainLP-chairs.jpg) 100% 100%;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.col-pictures-2 {
+	background: url(assets/mainLP-lamps.jpg) 100% 100%;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.col-pictures-3 {
+	background: url(assets/mainLP-cups.jpg) 70% 60%;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.col-pictures-4 {
+	background: url(assets/mainLP-clocks.jpg) 70% 60%;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+
+.col-pictures-5 {
+	background: url(assets/mainLP-plates.jpg) 70% 60%;
+	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 
 .col-pictures-2 img {
-	float: right;
+	/*float: right;
 	width: calc(70% - 20px);
-	margin-left: 20px;
+	margin-left: 20px;*/
 
 }
 
 .colours {
-	width: 30%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
+	/*width: 30%;*/
+	/*position: absolute;*/
+	/*top: 0;
+	bottom: 0;*/
 	text-align: center;
 
 }
@@ -721,5 +748,17 @@ form {
 .footer5 .fa {
 	padding: 0 10px;
 
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
 
